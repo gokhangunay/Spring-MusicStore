@@ -1,0 +1,40 @@
+.table {
+    table-layout: fixed;
+    overflow: auto;
+}
+
+.table th{
+    text-align: center;
+}
+
+.table td{
+    text-align: center;
+    background: whitesmoke;
+
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+/*.tablo {*/
+    /*     Tablo-düzen: sabit;*/
+    /*     Taşma: otomatik;*/
+/*}*/
+
+/*.tablo th {*/
+    /*     Metin hizalama: merkez;*/
+/*}*/
+
+/*.tablo td {*/
+    /*     Metin hizalama: merkez;*/
+    /*     Arka plan: whitesmoke;*/
+
+    /*     Ekran bloğu;*/
+    /*     Taşma: gizli;*/
+    /*     Metin taşması: elips;*/
+    /*     Beyaz boşluk: şimdiki;*/
+/*}*/
+
