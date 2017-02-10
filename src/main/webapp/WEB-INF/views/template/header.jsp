@@ -18,7 +18,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Müzik Ürünleri Mağazası</title>
+    <title>Müzik Aletleri Mağazası</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<c:url value="/resources/css/bootstrap.min.css"/>" rel="stylesheet">

@@ -1,8 +1,10 @@
 package com.emusicstore.model;
 
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
 
 /**
  * Created by gokhangunay on 23/10/2016.
@@ -12,32 +14,34 @@ import javax.persistence.*;
 @Table(name = "PRODUCT")
 public class Product {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private String productId;
 
+    @NotEmpty(message = "Ürün adı girilmesi zorunludur.")
     private String productName;
 
     private String productCategory;
 
     private String productDescription;
 
+    @Min(value = 0, message = "Ürün fiyatı girilmesi zorunludur.")
     private double productPrice;
 
     private String productCondition;
 
     private String productStatus;
 
+    @Min(value = 0, message = "Ürün stoğu girilmesi zorunludur.")
     private int unitInStock;
 
     private String productManufacturer;
 
-    @Transient
     private MultipartFile productImage;
 
     //Getter and Setter
 
     @Column(name = "PRODUCTID")
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public String getProductId() { return productId; }
 
     public void setProductId(String productId) { this.productId = productId; }
@@ -112,6 +116,7 @@ public class Product {
         this.productManufacturer = productManufacturer;
     }
 
+    @Transient
     public MultipartFile getProductImage() {
         return productImage;
     }

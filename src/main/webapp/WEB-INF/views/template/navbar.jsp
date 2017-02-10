@@ -22,16 +22,20 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">MÜZIK MAĞAZASI</a>
+
+                    <a class="navbar-brand" href="#">
+                        <img src="<c:url value="/resources/images/icon4.png"/>">
+                    </a>
+
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="<c:url value="/"/> ">Ana Sayfa</a></li>
+                        <li><a href="<c:url value="/"/> ">Ana Sayfa</a></li>
                         <li><a href="<c:url value="/productList" />">Ürünler</a></li>
                         <li><a href="#contact">Iletişim</a></li>
                     </ul>
                     <ul class="nav navbar-nav pull-right">
-                         <li><a href="<c:url value="/WEB-INF/views/admin.jsp"/>">Admin</a></li>
+                         <li><a href="<c:url value="/admin"/>">Admin</a></li>
                     </ul>
                 </div>
             </div>

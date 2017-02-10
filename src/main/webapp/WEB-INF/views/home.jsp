@@ -9,6 +9,8 @@
 
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ include file="/WEB-INF/views/template/header.jsp"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 
 <html>
 
@@ -18,7 +20,7 @@
 <!-- Carousel
 ================================================== -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
+    <!-- Indicators Gösterge-->
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -26,17 +28,17 @@
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img class="first-slide" src="<c:url value="/resources/images/back1.jpg"/> " alt="First slide">
+            <img class="first-slide home-image" src="<c:url value="/resources/images/back1.jpg"/> " alt="First slide">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Example headline.</h1>
-                    <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                    <h1>Merhaba, Mağazamıza Hoşgeldin..</h1>
+                    <p>Buradan istediğin tüm enstrumanlara ulaşabilirsin.</p>
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
                 </div>
             </div>
         </div>
         <div class="item">
-            <img class="second-slide" src="<c:url value="/resources/images/back2.jpg"/> " alt="Second slide">
+            <img class="second-slide home-image" src="<c:url value="/resources/images/back2.jpg"/> " alt="Second slide">
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Another example headline.</h1>
